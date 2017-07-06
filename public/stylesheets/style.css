@@ -1,0 +1,18 @@
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}*/
+
+#footer {
+    border-top: 2px solid #f0f0f0;
+    height: 30px;
+}
+
+#footer>div {
+    line-height: 30px;
+    color: #222;
+}

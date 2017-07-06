@@ -1,0 +1,33 @@
+<%- include header %>
+    <h2>用户注册</h2>
+    <form class="form-horizontal" method="post">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-4 ">
+                <input type="text" name="name" class="form-control" id="inputEmail3" placeholder="Email" autocomplete="off">
+                <p>你的账户名称，用于登录和显示</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-4">
+                <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Confirm Pass</label>
+            <div class="col-sm-4">
+                <input type="password" name="password-repeat" class="form-control" id="inputPassword3" placeholder="Password" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-4">
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+        </div>
+    </form>
+
+    <%- include footer %>

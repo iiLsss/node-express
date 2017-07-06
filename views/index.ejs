@@ -1,0 +1,54 @@
+<%- include header %>
+    <% if (user) { %>
+        <div class="row">
+            <form method="post" class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">标题：</label>
+                    <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="标题">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">正文：</label>
+                    <textarea name="post" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="发表" />
+                </div>
+
+            </form>
+        </div>
+
+        <% } else { %>
+
+            <div class="home">
+                <h1>Welcome To My Home</h1>
+                <p>Node.js的登录注册留言系统</p>
+                <p>
+                    <a href="/login" class="btn btn-primary btn-lg active" role="button">登 录</a>
+                    <a href="/reg" class="btn btn-default btn-lg active" role="button">注 册</a>
+                </p>
+            </div>
+
+            <% } %>
+
+                <% posts.forEach(function (post, index) { %>
+                    <p>
+                        <h2>
+                            <a href="#">
+                                <%= post.title %>
+                            </a>
+                        </h2>
+                    </p>
+
+                    <p class="info">
+                        作者：
+                        <a href="#">
+                            <%= post.name %>
+                        </a> | 日期：
+                        <%= post.time.minute %>
+                    </p>
+                    <p>
+                        <%- post.post %>
+                    </p>
+                    <% }) %>
+
+                        <%- include footer %>
