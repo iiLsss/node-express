@@ -1,0 +1,26 @@
+{
+    "apps": [{
+        "name": "microblog",
+        "script": "app.js",
+        "env": {
+            "COMMON_VARIABLE": "true"
+        },
+        "env_production": {
+            "NODE_ENV": "production"
+        }
+    }],
+    "deploy": {
+        "production": {
+            "user": "ubuntu",
+            "host": ["119.29.92.174"],
+            "port": 22,
+            "ref": "origin/master",
+            "repo": "https://github.com/iiLsss/node-express.git",
+            "path": "/home/ubuntu/www",
+            "ssh_options": "StrictHostKeyChecking=no",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    }
+}
