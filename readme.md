@@ -3,9 +3,7 @@
 - http://ourjs.com/detail/56b2a6f088feaf2d031d2468?utm_source=tuicool&utm_medium=referral
 - http://www.tuicool.com/articles/jueARjE
 
-经过ctrl+c ctrl+v 终于完成这个留言板系统 
-注释杂乱 
-整个案例大概了解下Express框架、MVC设计模式、ejs模板引擎以及MongoDB数据库的操作
+Express框架、MVC设计模式、ejs模板引擎以及MongoDB数据库的操作
 #### MVC设计模式
 MVC （Model-View-Controller）是一种软件的设计模式。
 - 模型是对象及其数据结构的实现，通常包含数据库
